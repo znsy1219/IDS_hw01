@@ -1,0 +1,91 @@
+---
+title: "hw-01"
+author: "Your Name (S000000)"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+## **DO NOT EDIT THIS CODE CHUNK**
+knitr::opts_chunk$set(echo = TRUE)
+
+#run install.packages("cherryblossom") on the console to get the run17 dataset
+
+library(tidyverse)
+library(cherryblossom)  
+```
+
+
+
+## Exercise 1
+
+_Write your text to answer exercise 1 here (Please delete this message before submission!)_
+
+
+
+
+
+## Exercise 2
+
+_The R chunk below generates the given histogram. Edit the code to account for the amendments stated in exercise 2. (Please delete this message before submission!)_
+
+<Edit the code below>
+```{r run17_data_viz, warning = FALSE, out.width = "80%"}
+ggplot(data = run17, 
+       mapping = aes(x = net_sec)) +
+  geom_histogram(binwidth = 200)
+```
+
+
+
+
+
+## Exercise 3
+
+_Write your text to answer exercise 3 here (Please delete this message before submission!)_
+
+
+
+
+
+## Exercise 4
+
+```{r bad_viz, echo = FALSE, out.width = "80%"}
+# edit the file path accordingly
+knitr::include_graphics("img/bad_viz.png")
+```
+
+_Edit the text below to provide a reference for your image (Please delete this message before submission!)_
+<Author/Organisation>, "<Title of website>" [Online]. Available at: <URL> (Accessed: <day month year>)
+
+
+The above image presents a bad data visualisation because:
+
+-   _Reason 1_
+-   _Reason 2_
+
+
+
+
+
+
+## Exercise 5
+
+```{r good_viz, echo = FALSE, out.width = "80%"}
+# edit the file path accordingly
+knitr::include_graphics("img/good_viz.png")
+```
+
+_Edit the text below to provide a reference for your image (Please delete this message before submission!)_
+<Author/Organisation>, "<Title of website>" [Online]. Available at: <URL> (Accessed: <day month year>)
+
+
+The above image presents a good data visualisation because:
+
+-   _Reason 1_
+-   _Reason 2_
+
+
+
+
+
