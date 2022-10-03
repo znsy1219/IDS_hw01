@@ -29,7 +29,7 @@ _Write your text to answer exercise 1 here (Please delete this message before su
 
 _The R chunk below generates the given histogram. Edit the code to account for the amendments stated in exercise 2. (Please delete this message before submission!)_
 
-<Edit the code below>
+_Edit the code below:_
 ```{r run17_data_viz, warning = FALSE, out.width = "80%"}
 ggplot(data = run17, 
        mapping = aes(x = net_sec)) +
