@@ -56,7 +56,9 @@ knitr::include_graphics("img/bad_viz.png")
 ```
 
 _Edit the text below to provide a reference for your image (Please delete this message before submission!)_
-<Author/Organisation>, "<Title of website>" [Online]. Available at: <URL> (Accessed: <day month year>)
+
+
+{Author/Organisation}, "{Title of website}" [Online]. Available at: {URL} (Accessed: {day month year})
 
 
 The above image presents a bad data visualisation because:
@@ -77,7 +79,9 @@ knitr::include_graphics("img/good_viz.png")
 ```
 
 _Edit the text below to provide a reference for your image (Please delete this message before submission!)_
-<Author/Organisation>, "<Title of website>" [Online]. Available at: <URL> (Accessed: <day month year>)
+
+
+{Author/Organisation}, "{Title of website}" [Online]. Available at: {URL} (Accessed: {day month year})
 
 
 The above image presents a good data visualisation because:
