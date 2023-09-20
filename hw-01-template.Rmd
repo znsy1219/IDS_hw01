@@ -9,87 +9,10 @@ output: html_document
 ## **DO NOT EDIT THIS CODE CHUNK**
 knitr::opts_chunk$set(echo = TRUE)
 
-#run install.packages("cherryblossom") on the console to get the run17 dataset
-
 library(tidyverse)
-library(cherryblossom)  
 ```
 
 
+## Warning!
 
-## Exercise 1
-
-_Write your text to answer exercise 1 here (Please delete this message before submission!)_
-
-
-
-
-
-## Exercise 2
-
-_The R chunk below generates the given histogram. Edit the code to account for the amendments stated in exercise 2. (Please delete this message before submission!)_
-
-_Edit the code below:_
-```{r run17_data_viz, warning = FALSE, out.width = "80%"}
-ggplot(data = run17, 
-       mapping = aes(x = net_sec)) +
-  geom_histogram(binwidth = 200)
-```
-
-
-
-
-
-## Exercise 3
-
-_Write your text to answer exercise 3 here (Please delete this message before submission!)_
-
-
-
-
-
-## Exercise 4
-
-```{r bad_viz, echo = FALSE, out.width = "80%"}
-# edit the file path accordingly
-knitr::include_graphics("img/bad_viz.png")
-```
-
-_Edit the text below to provide a reference for your image (Please delete this message before submission!)_
-
-
-{Author/Organisation}, "{Title of website}" [Online]. Available at: {URL} (Accessed: {day month year})
-
-
-The above image presents a bad data visualisation because:
-
--   _Reason 1_
--   _Reason 2_
-
-
-
-
-
-
-## Exercise 5
-
-```{r good_viz, echo = FALSE, out.width = "80%"}
-# edit the file path accordingly
-knitr::include_graphics("img/good_viz.png")
-```
-
-_Edit the text below to provide a reference for your image (Please delete this message before submission!)_
-
-
-{Author/Organisation}, "{Title of website}" [Online]. Available at: {URL} (Accessed: {day month year})
-
-
-The above image presents a good data visualisation because:
-
--   _Reason 1_
--   _Reason 2_
-
-
-
-
-
+The homework assignment is yet to be released. Further information about the assignments can be found on the [course website](https://uoe-ids.netlify.app/assessments/homework/), including release dates.
