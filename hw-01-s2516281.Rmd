@@ -101,8 +101,7 @@ bathrooms_edibnb %>%
 ```
 
 
-_Remove this text, and add your answer for Exercise 3 here._
-
+The number of properties that has bathroom more than bedrooms in Edinburgh is 703.
 
 
 ------------------------------------------------------------------------------
