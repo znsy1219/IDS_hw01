@@ -79,7 +79,24 @@ For Airbnb properties in Southside for a single night stay for four people, the 
 ## EXERCISE 3
 
 ```{r hw1-ex3}
-# remove this comment and add the code for Exercise 3 here
+edibnb %>%
+  filter(neighbourhood == "Newington")%>%
+  count(bathrooms)
+
+bathrooms_edibnb <- edibnb %>%
+  mutate(
+    bathrooms = case_when(
+      bathrooms == 0.5 ~ 1,
+      bathrooms == 1.5 ~ 2,
+      bathrooms == 2.5 ~ 3,
+      bathrooms == 3.5 ~ 4
+      )
+    )
+
+bathrooms_edibnb %>%
+  filter(bathrooms >= bedrooms)%>%
+  count()
+
 
 ```
 
