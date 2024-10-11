@@ -70,7 +70,7 @@ properties_four %>%
 ```
 
 
-There has 552 number of Airbnb properties located in Old Town having the one night stay price larger than 100 GBP.
+There has 494 number of Airbnb properties located in Old Town having the one night stay price larger than 100 GBP.
 For Airbnb properties in Southside for a single night stay for four people, the minimum price is 10, maximum price is 800, and average price is 153.1368. 
 
 
@@ -93,7 +93,7 @@ edibnb %>%
 ```
 
 
-The number of properties that has bathroom more than bedrooms in Edinburgh is 703.
+The number of properties that has bathroom more than bedrooms in Edinburgh is 963.
 
 
 ------------------------------------------------------------------------------
