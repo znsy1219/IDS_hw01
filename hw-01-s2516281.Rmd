@@ -51,7 +51,7 @@ The table showes id which all has 100 review_scores_rating with highest number o
 edibnb %>%
   filter(
     neighbourhood == "Old Town",
-    price >= 100
+    price > 100
     )%>%
   count()
 
@@ -84,19 +84,10 @@ edibnb %>%
   filter(neighbourhood == "Newington")%>%
   count(bathrooms)
 
-bathrooms_edibnb <- edibnb %>%
-  mutate(
-    bathrooms = case_when(
-      bathrooms == 0.5 ~ 1,
-      bathrooms == 1.5 ~ 2,
-      bathrooms == 2.5 ~ 3,
-      bathrooms == 3.5 ~ 4
-      )
-    )
-
-bathrooms_edibnb %>%
-  filter(bathrooms >= bedrooms)%>%
-  count()
+edibnb %>%
+  mutate(new_bathrooms = ceiling(bathrooms))%>%
+  filter(new_bathrooms > bedrooms, na.rm = TRUE)%>%
+  summarise(count=n())
 
 
 ```
@@ -110,7 +101,20 @@ The number of properties that has bathroom more than bedrooms in Edinburgh is 70
 ## EXERCISE 4
 
 ```{r hw1-ex4}
-# remove this comment and add the code for Exercise 4 here
+council %>%
+  mutate(
+    final_date = dmy(assessment_date)
+    )%>%
+  filter(month(final_date) == 05)%>%
+  summarise(
+    count = n()
+  )
+
+New_set = right_join(edibnb,council)
+New_set %>%
+  select(neighbourhood)%>%
+  group_by(neighbourhood)%>%
+  summarise(count = n())
 
 ```
 
