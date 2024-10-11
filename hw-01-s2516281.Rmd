@@ -34,13 +34,14 @@ na_columns <- colnames(edibnb)[colSums(is.na(edibnb)) > 0]
 na_columns
 
 edibnb %>% 
-  filter(review_scores_rating == 100)
+  filter(review_scores_rating == 100)%>%
+  arrange(desc(number_of_reviews))
 
 ```
 
 
 The variables with missing observations are showed.Finding columns with NA.
-The table showes id which all has 100 review_scores_rating.
+The table showes id which all has 100 review_scores_rating with highest number of reviews.
 
 ------------------------------------------------------------------------------
 
