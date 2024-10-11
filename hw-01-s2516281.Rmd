@@ -47,12 +47,31 @@ The table showes id which all has 100 review_scores_rating.
 ## EXERCISE 2
 
 ```{r hw1-ex2}
-# remove this comment and add the code for Exercise 2 here
+edibnb %>%
+  filter(
+    neighbourhood == "Old Town",
+    price >= 100
+    )%>%
+  count()
+
+properties_four <- edibnb %>%
+  filter(
+    neighbourhood == "Southside",
+    accommodates >= 4
+  )
+properties_four %>%
+  summarise(
+    mean_price = mean(price),
+    minimum_price = min(price),
+    maximum_price = max(price)
+  )
 
 ```
 
 
-_Remove this text, and add your answer for Exercise 2 here._
+There has 552 number of Airbnb properties located in Old Town having the one night stay price larger than 100 GBP.
+For Airbnb properties in Southside for a single night stay for four people, the minimum price is 10, maximum price is 800, and average price is 153.1368. 
+
 
 
 ------------------------------------------------------------------------------
