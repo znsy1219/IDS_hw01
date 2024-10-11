@@ -119,7 +119,8 @@ New_set %>%
 ```
 
 
-_Remove this text, and add your answer for Exercise 4 here._
+The frequency table shows number of properties in different area. As the properties in Leith is too large, therefore the council is not targeting all neighborhoods equally.
+Yes, there is.Compare the proportions.Count the number of properties in each neighborhood and sum the number of properties in each neighborhood, then calculate the proportion assessed.
 
 
 ------------------------------------------------------------------------------
