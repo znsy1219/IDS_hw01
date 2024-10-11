@@ -1,6 +1,6 @@
 ---
 title: "hw-01"
-author: "Nanshuyuan (S000000)"
+author: "Nanshuyuan Zhang (S2516281)"
 date: "`r Sys.Date()`"
 output: html_document
 ---
@@ -30,12 +30,17 @@ council <- read_csv("data/council_assessments.csv")
 ## EXERCISE 1
 
 ```{r hw1-ex1}
-# remove this comment and add the code for Exercise 1 here
+na_columns <- colnames(edibnb)[colSums(is.na(edibnb)) > 0]
+na_columns
+
+edibnb %>% 
+  filter(review_scores_rating == 100)
 
 ```
 
 
-_Remove this text, and add your answer for Exercise 1 here._
+The variables with missing observations are showed.Finding columns with NA.
+The table showes id which all has 100 review_scores_rating.
 
 ------------------------------------------------------------------------------
 
