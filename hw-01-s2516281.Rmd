@@ -1,6 +1,6 @@
 ---
 title: "hw-01"
-author: "Your Name (S000000)"
+author: "Nanshuyuan (S000000)"
 date: "`r Sys.Date()`"
 output: html_document
 ---
